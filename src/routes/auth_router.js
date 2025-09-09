@@ -1,6 +1,4 @@
         const express = require('express')
-        const userModel = require('../models/auth_model')
-        const jwt = require('jsonwebtoken')
 
         const {registerController, loginController} = require('../controllers/auth.controller')
 

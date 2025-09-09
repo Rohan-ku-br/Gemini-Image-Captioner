@@ -17,7 +17,6 @@ async function authMiddleware(req, res, next){
     })
     req.user = user;
     next()
-    console.log(decode);
     }catch(err){
         return res.status(401).json({
             message:"not valid token, login First..."
